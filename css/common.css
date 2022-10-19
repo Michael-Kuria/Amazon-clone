@@ -163,3 +163,44 @@ order:position in flex /* Set ascending by default
 
 align-self:  start | center | end | stretch
 */
+
+
+/*
+CSS selectors: elements, id, class
+
+Aside from this we also have atribute selectors
+*/
+
+/*
+attribute selector
+*/
+a[class]{
+    background-color: aliceblue;
+}
+
+a[href*="kenya"]{
+    color: yellow;
+}
+
+/*
+Nth-of-type and nth-child selectors
+*/
+
+element:nth-child(n){
+    property:value;
+}
+
+element:nth-of-type(n){
+    property: value;
+}
+
+
+
+/*
+Grouping selectors
+*/
+
+element, element {
+    property:value;
+}
+
