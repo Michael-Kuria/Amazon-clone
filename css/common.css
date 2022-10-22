@@ -204,3 +204,37 @@ element, element {
     property:value;
 }
 
+
+
+/*
+Combination selectors
+
+    1: Descendant Selectors (using space)
+    2: Child selectors(>) 
+    3: General sibling selectors(~) 
+    4: Adjacent sibling selectors(+) 
+*/
+
+/*
+Pseudo classes
+
+ - User action states: hover, active & focus : -  They have effect while a user is actively enganging with an HTML element
+ - Form states: disabled & enabled - (buttons), checked & indeterminate - (checkboxes), valid and invalid
+ - Specific position - based states: first-of-type, last-of-type, nth-of-type() & nth-last-of-type()
+
+
+Pseudo elements - Helps one style a specific part of an element. Examples
+ - ::first-letter
+ - ::first-line
+
+*/
+
+selector:pseudo-class{
+    property:value;
+}
+
+selector::pseudo-element {
+
+    property: value; 
+   
+   }
