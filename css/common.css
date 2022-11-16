@@ -247,6 +247,7 @@ selector{
 
 
 /*
+<<<<<<< HEAD
 Value can be the following
 inline 	Displays an element as an inline element (like <span>). Any height and width properties will have no effect 	
 block 	Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width 	
@@ -272,6 +273,27 @@ none 	The element is completely removed
 initial 	Sets this property to its default value. Read about initial 	
 inherit 	Inherits this property from its parent element. Read about inherit
 */
+=======
+display:  inline -> 
+display: inline-block - > The main difference with inline is that the top and bottom margins/paddings are respected
+display: block -> unlike inline-block it adds a line-break after the element, so the element cannot sit next to other elements.
+
+
+position: static -> normal document flow
+position: relative -> an element will be positioned relative to its normal position. 
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+Other content will not be adjusted to fit into any gap left by the element.
+
+position: absolute -> is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+position: fixed -> is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. 
+The top, right, bottom, and left properties are used to position the element.
+
+position: -webkit-sticky; - in Safari
+position: sticky; -> is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. 
+It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed)
+>>>>>>> abc456dcb9eacde2ac95fcb37a699067fb0d1630
 
 selector{
     clear:value;
