@@ -1,0 +1,271 @@
+*, *::after, *::before{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+
+
+/* header start here */
+.header{
+    background-color: rgb(19, 25, 33);
+    height: 60px;
+    color: #fff;
+}
+
+.header-container{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    padding-right: 10px ;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+    
+}
+
+
+.header-left{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 2px;
+   
+
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.location{
+    display: flex;
+    align-items: flex-end;
+}
+
+.pin-logo{
+  
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+.delivery-location{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    
+}
+
+.header-small{
+    font-size: .8rem;
+}
+
+.header-big{
+    font-weight: bold;
+}
+
+.search-bar{
+    flex-grow: 1;
+    align-self: center;
+
+}
+
+.search-bar form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-bar button{
+    width: 60px;
+    height: 40px;
+    border: 1px solid #aaa;
+}
+
+.search-bar .selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-right: 0;
+}
+
+.search-bar .search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-left: 0; 
+    background-color: #FF9900;
+}
+
+.search-input{
+    width: 80%;
+    font-size: inherit;
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 0;
+    border: 1px solid #aaa;
+    
+}
+
+.search-input:focus{
+    outline: none;
+}
+
+.header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.header-right a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.change-language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.signIn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+
+}
+
+
+.accounts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+.returns-orders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+.orders{
+    white-space: nowrap;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+}
+
+/* Nav start here */
+
+.nav{
+    display:flex;
+    justify-content: start;
+    height: 40px;
+    background-color: #232f3e;
+    color: #fff;
+    font-size: .9rem;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.menu-btn{
+    display: flex;
+    align-items: center;
+    padding: .2rem;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-name{
+    padding-left: .2rem ;
+}
+
+.links ul{
+    display: flex;
+
+}
+.links li{
+    list-style-type: none;
+    padding-left: 2rem;
+
+}
+
+.links li a{
+    color: #fff;
+    text-decoration: none;
+    position:relative;
+    width: 100%; 
+    white-space: nowrap;
+}
+
+
+.links li a::after{
+    position: absolute;
+    left: 0rem;
+    bottom: -0.5rem;
+    content: "";
+    border: .05rem solid transparent;
+    width: 0px;
+}
+
+.links li a:hover::after{
+    width:100%;
+    transition: width 1s, border 1s;
+    border: .05rem solid #fff;
+    transition-timing-function: ease-in-out;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 810px) {
+
+    .header, .nav{
+        width: 810px;
+        overflow: hidden;
+    }
+    
+   
+}
+
+/* Main starts here */
+
+
+
+
+/* Footer Starts here */
