@@ -1,3 +1,3 @@
 # Amazon-clone
 
-An amazon clone with only HTML and CSS
+An amazon home page clone with only HTML and CSS
