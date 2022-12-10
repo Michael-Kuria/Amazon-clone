@@ -3,6 +3,11 @@
     box-sizing: border-box;
     padding: 0;
     font-family: Roboto,Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background-color: #e6e6e6;
 }
 
 
@@ -279,6 +284,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 2rem;
 
 }
 
@@ -357,12 +363,12 @@
     padding-left: 0.5rem;
 }
 
-.item-link a{
+.item-link a, .footer-signIn-container a{
     text-decoration: none;
     color: #007185;
 }
 
-.item-link a:hover{
+.item-link a:hover, .footer-signIn-container a:hover{
     color: #C7511F;
     text-decoration: underline;
 }
@@ -373,3 +379,115 @@
 
 
 /* Footer Starts here */
+
+.footer{
+    width: 100%;
+    background-color: #fff;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-signIn{
+   padding-bottom: 2rem;
+}
+
+.footer-signIn-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #aaa;
+    margin-top: 3rem;
+    
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.footer-signIn-btn{
+    background-color: #FF9900;
+    border: 1px solid #aaa;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    width: 15rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-style: inherit;
+    font-weight: bold;
+}
+
+
+.back-to-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color:#37475A;
+}
+
+.back-to-top-btn{
+    width: 100%;
+    padding: 1.3rem;
+    background-color: #37475A;
+    border: none;
+    color: #fff;
+}
+
+.back-to-top-btn:hover{
+    background-color: #4b596b;
+}
+
+
+.footer-links{
+    background-color: #232F3E;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-links-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 80%;
+    color: #fff;
+    gap:3rem;
+}
+
+.footer-column{
+
+}
+
+.footer-column-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.footer-column-title{
+    font-weight: bold;
+
+}
+
+.footer-column-container ul{
+    list-style: none;
+
+}
+.footer-column-container a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.footer-column-container a:hover{
+    text-decoration: underline;
+}
+
+.footer-column-container li{
+    padding-bottom: 0.1rem;
+}
